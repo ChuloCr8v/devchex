@@ -1,0 +1,52 @@
+.contactform {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  width: 250px;
+  padding: 20px;
+  background: rgba(0,0,0,0.664);
+  border-radius: 11px;
+  position: relative;
+  z-index: 9999;
+  box-shadow: 3px 3px 8px 2px  rgb(0,0,0,0.4);
+  h5 {
+    font-size: 15px;
+    color: #ff2768;
+    text-align: center;
+    line-height: 5px;
+    margin-top: 10px;
+  }
+  label {
+    color: white;
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  input, textarea {
+    color: white;
+    padding: 5px;
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    border: 1.5px #069ce5 solid;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+      border: 2px pink solid;
+    }
+  }
+  textarea {
+    height: 200px;
+  }
+ .submit {
+   margin-top: 20px;
+   &:hover {
+     background: #ff000040;
+   }
+ }
+}
+
+@media (min-width: 788px) {
+ .contactform {
+   width: 350px;
+ }
+}

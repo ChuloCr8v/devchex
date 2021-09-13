@@ -1,0 +1,11 @@
+.menu {
+  display: grid;
+  grid-template-columns: 10px 10px;
+  gap: 2px;
+  .box {
+    width: 10px;
+    height: 10px;
+    background: white;
+  }
+}
+

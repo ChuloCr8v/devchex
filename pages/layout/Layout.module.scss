@@ -1,0 +1,24 @@
+.layout {
+  overflow: hidden;
+}
+
+.header {
+  display: none;
+ .logo {
+   img {
+     height: 90px;
+     width: 70px;
+   }
+ }
+}
+@media (min-width: 788px) {
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      padding: 20px;
+    }
+  }
+}

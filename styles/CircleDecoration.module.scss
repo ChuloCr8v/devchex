@@ -1,0 +1,45 @@
+.circledecoration {
+  position: fixed;
+  .circle1, 
+  .circle2 {
+    height: 50px;
+    width: 50px;
+    background: #ff2768;
+    border-radius: 100%;
+    position: absolute;
+    filter: blur(20px);
+  } 
+ .circle1 {
+   top: 220px;
+   left: 150px;
+   animation: color 3.6s ease-in-out alternate infinite;
+ }
+.circle2 {
+  background: #069ce5;
+  top: 500px;
+  right: 100px;
+  animation: move 3.6s ease-in-out alternate infinite;
+}
+}
+
+@keyframes color {
+  0% {
+    opacity: 0;
+    background: yellow; 
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    background: yellow;
+  }
+  100% {
+    transform: translateX(300px);
+    
+  }
+}

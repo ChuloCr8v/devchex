@@ -1,0 +1,27 @@
+.aboutme {
+  //position: relative;
+ .heading {
+  color: white;
+  font-size: 80px;
+  line-height: 70px;
+  text-transform: capitalize;
+  opacity: 0.2;
+  margin: 20px;
+  font-weight: 900;
+  position: absolute;
+    top: 0;
+  } 
+  span {
+    color: #ff2768;
+  }
+}
+
+@media (min-width:788px) {
+ .aboutme {
+  .heading {
+      font-size: 200px;
+      line-height: 170px;
+      top: 5%;
+   }
+ }
+} 

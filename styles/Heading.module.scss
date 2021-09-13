@@ -1,0 +1,16 @@
+.heading {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    h1 {
+      position: relative;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+    }
+   .border {
+     max-width: 200px;
+     margin: -40px;
+   }
+  }

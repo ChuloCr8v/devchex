@@ -1,0 +1,31 @@
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p, .icon {
+    color: white;
+    font-size: 10px;
+    line-height: 5px;
+    text-align: center;
+  }
+ .icon {
+   font-weight: bold;
+   font-size: 20px;
+   margin-top: 10px;
+   color: #069ce5;
+ }
+} 
+
+
+
+@media (min-width: 788px){
+  .scroll {
+    p, .icon {
+      font-size: 18px;
+    }
+   .icon {
+     font-size: 28px;
+     margin-top: 10px;
+   }
+  } 
+}

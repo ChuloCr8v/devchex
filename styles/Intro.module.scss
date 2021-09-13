@@ -1,0 +1,29 @@
+.intro {
+  margin-left: 20px;
+  margin-top: -10px;
+  h1 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 10px;
+    span {
+      color: #069ce5;
+      font-size: 30px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 788px) {
+  .intro {
+    h1 {
+      font-size: 40px;
+      margin-bottom: 35px;
+      span {
+        font-size: 50px;
+      }
+    }
+  }
+}

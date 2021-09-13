@@ -1,0 +1,104 @@
+.frontend {
+  overflow: hidden;
+ h5 {
+    text-align: center;
+    color: #069ce5;
+    margin: 70px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+ .stacks {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: -30px;
+  .skillset1, .skillset2, .skillset3, .skillset4 {
+      padding: 0 20px;
+      display: flex;
+      p {
+        text-align: center;
+        font-size: 13px;
+        margin: 10px auto;
+        animation: color 1s ease-in-out infinite;
+        } 
+      }
+    .skillset2 {
+       p {
+         font-size: 13px;
+         animation: color2 2s linear infinite
+       } 
+     }
+     
+    .skillset3 {
+       p {
+         animation: color3 1.3s ease-in infinite
+       } 
+     }
+     
+    .skillset4 {
+       p {
+         animation: color4 0.6s ease-out infinite
+       } 
+     }
+   } 
+ } 
+
+@keyframes color {
+  0% {
+    color: #ff2768;
+  }
+  50% {
+    color: #069ce5;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes color2 {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #ff2768;
+  }
+  100% {
+    color: #069ce5;
+  }
+}
+
+@keyframes color3 {
+  0% {
+    color: #ff2768;
+  }
+  25% {
+    color: yellow;
+  }
+  50% {
+    color: #069ce5;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes color4 {
+  0% {
+    color: #069ce5;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: #ff2768;
+  }
+}
+
+@media (min-width: 788px) {
+  .frontend {
+    padding: 0 50px;
+    p {
+      font-size: 15px;
+    }
+  }
+}

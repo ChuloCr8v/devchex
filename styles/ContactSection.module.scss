@@ -1,0 +1,37 @@
+.contactsection {
+  overflow: hidden;
+  margin-top: 200px;
+  padding-bottom: 200px;
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+    .p {
+      font-size: 13px;
+      color: white;
+      line-height: 18px;
+     // letter-spacing: 2px;
+      text-align: center;
+      padding: 0 10px;
+    }
+    .forms {
+      margin-top: 100px;
+    }
+  }
+}
+
+.scrollcontainer {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 788px) {
+  .contactsection {
+    .container {
+      padding: 0 60px;
+      .forms {
+        display: flex;
+        padding: 0 50px;
+      }
+    }
+  }
+}
