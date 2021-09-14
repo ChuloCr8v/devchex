@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export", 
     "start": "next start",
     "lint": "next lint"
   },
+  
   "dependencies": {
     "aos": "^2.3.4",
     "framer-motion": "^4.1.17",
