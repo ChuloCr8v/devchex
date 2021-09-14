@@ -14,11 +14,11 @@ const ContactForm = () => {
     <input type="hidden" name="form-name" value="contact"/>
       <h5> Leave a message or enquiry </h5>
       <label htmlFor='name'> Name </label>
-        <input type='text' required placeholder= 'Enter Name' />
+        <input type='text' name="name" required placeholder= 'Enter Name' />
       <label htmlFor='email'> Email </label>
-        <input htmlFor='email' required placeholder= 'Enter Email' />
+        <input htmlFor='email' name="email" required placeholder= 'Enter Email' />
       <label htmlFor='message'> Message </label>
-      <textarea id='message' placeholder ="Leave me a message" />
+      <textarea id='message' name="message" placeholder ="Leave me a message" />
       <input type='submit' className={style.submit} />
     </form>
     )
