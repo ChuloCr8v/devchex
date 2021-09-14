@@ -1,0 +1,44 @@
+.messagesent {
+  margin-top: -190px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   img {
+     max-width: 30px;
+   }
+   h1 {
+     font-size: 25px;
+     color: #069ce5;
+     margin-right: 10px;
+   }
+ }
+ p {
+   font-size: 15px;
+   color: white;
+   text-align: center;
+ }
+}
+
+@media (min-width: 788px) {
+ .messagesent {
+
+ .heading {
+   img {
+     max-width: 40px;
+   }
+   h1 {
+     font-size: 35px;
+     margin-right: 20px;
+   }
+ }
+ p {
+   font-size: 20px;
+ }
+}
+}

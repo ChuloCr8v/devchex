@@ -10,7 +10,7 @@ const ContactForm = () => {
   })
   
   return(
-    <form name="contact" data-aos="fade-up" data-netlify="true" className={style.contactform}>
+    <form name="contact" action="/pages/sent" data-aos="fade-up" data-netlify="true" className={style.contactform}>
     <input type="hidden" name="form-name" value="contact"/>
       <h5> Leave a message or enquiry </h5>
       <label htmlFor='name'> Name </label>
