@@ -23,9 +23,9 @@ const ContactCard = () => {
             Front-End Developer. <span> WordPress Developer. </span>{" "}
             <span> Content Creator. </span>{" "}
           </h5>
-          <div className={style.socialicons}> <a href="https://www.github.com/ChuloCr8v" target="_blank" ><FaGithub className={style.icon} /> </a>
-      <a href="https://www.twitter.com/ChuloCr8v" target="_blank" ><FaTwitter className={style.icon} /></a>
-      <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148" target="_blank" ><FaLinkedin className={style.icon} /></a>
+          <div className={style.socialicons}> <a href="https://www.github.com/ChuloCr8v" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
+      <a href="https://www.twitter.com/ChuloCr8v" target="_blank" rel="noopener noreferrer"><FaTwitter className={style.icon} /></a>
+      <a href="https://www.linkedin.com/in/bonaventure-nkematu-77b563148" target="_blank" rel="noopener noreferrer"><FaLinkedin className={style.icon} /></a>
             
           </div>
         </div>

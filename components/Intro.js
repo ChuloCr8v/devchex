@@ -16,7 +16,7 @@ const Intro = () => {
       animate = {{y: 0, opacity: 1}}
       transition = {{delay: 2, type: 'spring', stiffnes: 50}}
       > 
-      I'm <span>Chex.</span>
+      I&apos;m <span>Chex.</span>
       </motion.h1>
       <motion.h1
       initial = {{ y: 20, opacity: 0}}

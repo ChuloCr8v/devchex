@@ -1,11 +1,11 @@
 import Heading from "./Heading";
 import style from "../styles/Portfolio.module.scss";
 import { FaEye, FaGlobe, FaGithub } from "react-icons/fa";
-import MyFirstPortFolio from '../public/portfolio.jpg'
-import PaulRay from '../public/paulray.jpg'
-import Grampro from '../public/grampro.jpg'
-import Shop from '../public/shop.jpg'
-import Blogr from '../public/blogr.jpg'
+import myfirstportfolio from '../public/portfolio.jpg'
+import paulray from '../public/paulray.jpg'
+import grampro from '../public/grampro.jpg'
+import shop from '../public/shop.jpg'
+import blogr from '../public/blogr.jpg'
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CircleDecoration from "./CircleDecoration";
@@ -66,7 +66,7 @@ const Portfolio = () => {
         <Heading className={style.heading} heading={"portfolio"} />
       <div className={style.list}>
         <div data-aos="fade-up" className={style.item}>
-          <img src={MyFirstPortFolio.src} className='img' alt="project" />
+          <img src={myfirstportfolio.src} className='img' alt="project" />
           <FaEye onClick={showDetails} className={style.eye} />
           {details && <motion.div className={style.description}
           initial= {{opacity: 0}}
@@ -79,14 +79,14 @@ const Portfolio = () => {
               <p>Mobile Responsive.</p>
             </div>
             <div className={style.links} >
-               <a href="https://chulocr8v.github.io" target="_blank" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/chulocr8v.github.io" target="_blank" ><FaGithub className={style.icon} /> </a>
+               <a href="https://chulocr8v.github.io" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
+               <a href="https://github.com/ChuloCr8v/chulocr8v.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
             </div>
           </motion.div>} 
         </div>
         
         <div data-aos="fade-up" className={style.item}>
-          <img src={Grampro.src} className='img1' alt="project" />
+          <img src={grampro.src} className='img1' alt="project" />
           <FaEye onClick={showDetails1} className={style.eye} />
           {details1 && <motion.div className={style.description}
           initial= {{opacity: 0}}
@@ -99,15 +99,15 @@ const Portfolio = () => {
               <p>Mobile Responsive.</p>
             </div>
              <div className={style.links} >
-              <a href="https://grampro.netlify.app" target="_blank" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/grampro" target="_blank" ><FaGithub className={style.icon} /> </a>
+              <a href="https://grampro.netlify.app" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
+               <a href="https://github.com/ChuloCr8v/grampro" target="_blank" rel="noopener noreferrer" ><FaGithub className={style.icon} /> </a>
             </div>
           </motion.div>} 
         </div>
         
         <div data-aos="fade-up" className={style.item}>
           <FaEye onClick={showDetails2} className={style.eye} />
-          <img src={PaulRay.src} className='img2' alt="project" />
+          <img src={paulray.src} className='img2' alt="project" />
           {details2 && <motion.div className={style.description}
           initial= {{opacity: 0}}
           animate= {{opacity: 1}} 
@@ -119,15 +119,15 @@ const Portfolio = () => {
               <p>Mobile Responsive.</p>
             </div>
              <div className={style.links} >
-              <a href="https://chulocr8v.github.io/paul-ray.github.io/" target="_blank" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/paul-ray.github.io" target="_blank" ><FaGithub className={style.icon} /> </a>
+              <a href="https://chulocr8v.github.io/paul-ray.github.io/" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
+               <a href="https://github.com/ChuloCr8v/paul-ray.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
             </div>
           </motion.div>} 
         </div>
         
         <div data-aos="fade-up" className={style.item}>
           <FaEye onClick={showDetails4} className={style.eye} />
-          <img src={Shop.src} className='img4' alt="project" />
+          <img src={shop.src} className='img4' alt="project" />
           {details4 && <motion.div className={style.description}
           initial= {{opacity: 0}}
           animate= {{opacity: 1}} 
@@ -139,14 +139,14 @@ const Portfolio = () => {
               <p>Mobile Responsive.</p>
             </div>
              <div className={style.links} >
-              <a href="https://shop247.netlify.app/" target="_blank" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/shop24seven.github.io" target="_blank" ><FaGithub className={style.icon} /> </a>
+              <a href="https://shop247.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGlobe className={style.icon} /> </a>
+               <a href="https://github.com/ChuloCr8v/shop24seven.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
             </div>
           </motion.div>} 
         </div>
         
         <div data-aos="fade-up" className={style.item}>
-          <img src={Blogr.src} className='img3' alt="project" />
+          <img src={blogr.src} className='img3' alt="project" />
           <FaEye onClick={showDetails3} className={style.eye} />
           {details3 && <motion.div className={style.description}
           initial= {{opacity: 0}}
@@ -159,8 +159,8 @@ const Portfolio = () => {
               <p>Mobile Responsive.</p>
             </div>
              <div className={style.links} >
-              <a href="https://chulocr8v.github.io/blogr-landing-page.github.io/" target="_blank" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/blogr-landing-page.github.io" target="_blank" ><FaGithub className={style.icon} /> </a>
+              <a href="https://chulocr8v.github.io/blogr-landing-page.github.io/" target="_blank" rel="noopener noreferrer"><FaGlobe className={style.icon} /> </a>
+               <a href="https://github.com/ChuloCr8v/blogr-landing-page.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
             </div>
           </motion.div>} 
         </div>

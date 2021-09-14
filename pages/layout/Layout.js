@@ -1,7 +1,7 @@
 import style from "./Layout.module.scss";
 import MenuTab from "./MenuTab";
 import MobileMenu from "./MobileMenu";
-import Logo from "../../public/logo.png";
+import logo from "../../public/logo.png";
 import { useState, useEffect } from "react";
 import CircleDecoration from '../../components/CircleDecoration'
 
@@ -37,7 +37,7 @@ const Layout = (props) => {
       <div className="header1">
         {bg && <div className={style.header}>
           <div className={style.logo}>
-            <img src={Logo.src} alt='devchex logo' />
+            <img src={logo.src} alt='devchex logo' />
           </div>
           <MobileMenu className={style.mobilemenu} />
         </div>}

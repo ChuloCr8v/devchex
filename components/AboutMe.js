@@ -38,7 +38,7 @@ const AboutMe = () => {
              <div className={style.item}>
               <FaTachometerAlt className={style.icon} />
               <h3>Fast Learner</h3>
-              <p>I can get the details with just a few explanations. You won't have to break into my brains to make me understand. </p>
+              <p>I can get the details with just a few explanations. I have a good imagination and can develop amazing concepts and design from your instructions. </p>
         </div>
         <div className={style.item}>
           <FaPenNib className={style.icon} />

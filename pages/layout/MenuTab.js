@@ -4,7 +4,7 @@ import {FaTimes} from 'react-icons/fa'
 import {useState} from 'react'
 import MobileMenu from './MobileMenu'
 import Image from 'next/image'
-import Logo from '../../public/logocrop.png'
+import logo from '../../public/logocrop.png'
 
 const MenuTab = () => {
  
@@ -19,7 +19,7 @@ const MenuTab = () => {
       {showMenu && <MobileMenu />} 
       <div className={style.menutab}>
         <div className={style.logo}>
-          <img src={Logo.src} alt="dev chex logo" />
+          <img src={logo.src} alt="dev chex logo" />
         </div>
         {!showMenu && <MenuIcon onShow={menuDisplay} />} 
         {showMenu && <FaTimes onClick={() => setShowMenu(false)} className={style.icon} />} 
