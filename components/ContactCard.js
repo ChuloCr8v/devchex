@@ -12,7 +12,7 @@ const ContactCard = () => {
   });
 
   return (
-    <div data-aos="fade-left" className={style.contactcard}>
+    <div data-aos="fade-up" className={style.contactcard}>
       <div data-aos="fade-in" className={style.details}>
         <img src={Logo.src} />
         <div className={style.name}>

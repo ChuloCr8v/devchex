@@ -10,7 +10,7 @@ const ContactForm = () => {
   })
   
   return(
-    <form name="contact" action="/pages/sent" data-aos="fade-up" data-netlify="true" className={style.contactform}>
+    <form name="contact" action="/sent" data-aos="fade-up" data-netlify="true" className={style.contactform}>
     <input type="hidden" name="form-name" value="contact"/>
       <h5> Leave a message or enquiry </h5>
       <label htmlFor='name'> Name </label>
@@ -18,7 +18,7 @@ const ContactForm = () => {
       <label htmlFor='email'> Email </label>
         <input htmlFor='email' name="email" required placeholder= 'Enter Email' />
       <label htmlFor='message'> Message </label>
-      <textarea id='message' name="message" placeholder ="Leave me a message" />
+      <textarea id='message' name="message" placeholder ="Leave me a message" required />
       <input type='submit' className={style.submit} />
     </form>
     )
