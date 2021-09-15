@@ -10,8 +10,10 @@ const SkillSection = () => {
       <div className={style.heading}>
         <Heading heading={"Skills and Stacks"} />
       </div>
-      <Frontend />
-      <Content />
+      <div className={style.container}>
+        <Frontend />
+        <Content />
+      </div>
       <div className={style.scrollcontainer}>
         <ScrollContainer />
       </div>

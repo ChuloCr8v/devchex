@@ -1,9 +1,16 @@
 .skillsection {
   min-height: 100vh;
-  margin-top: 200px;
+  margin: 200px 0;
 } 
 
 @media (min-width: 788px){
  .skillsection {
+  .container {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
  } 
 }

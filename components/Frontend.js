@@ -46,6 +46,7 @@ const Frontend = () => {
           <p> Woo Commerce</p>
           <p> Adobe Photoshop </p>
           <p> Canva </p>
+          <p> Figma </p>
         </div>
         </div>
     </div>

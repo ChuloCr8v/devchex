@@ -3,21 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 35px;
+//  padding: 20px 35px;
     h5 {
     text-align: center;
     color: #069ce5;
     margin: 70px 0;
     font-size: 18px;
     font-weight: 400;
-    margin-bottom: 100px;
   }
   .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
    .item {
-    margin-top: -80px;
      display: flex;
      justify-content: flex-start;
      align-items: center;
@@ -29,7 +28,14 @@
    p {
      font-size: 15px;
      color: white;
+     text-align: center;
    }
    }
+  }
+}
+
+@media (min-width:788px){
+  .list {
+    margin-top: -30px;
   }
 }
