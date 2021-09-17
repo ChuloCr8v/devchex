@@ -1,8 +1,8 @@
 import Heading from "./Heading";
 import style from "../styles/Portfolio.module.scss";
 import { FaEye, FaGlobe, FaGithub } from "react-icons/fa";
+import Image from 'next/image'
 import myfirstportfolio from '../public/portfolio.jpg'
-import paulray from '../public/paulray.jpg'
 import grampro from '../public/grampro.jpg'
 import shop from '../public/shop.jpg'
 import blogr from '../public/blogr.jpg'
@@ -13,169 +13,54 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ScrollContainer from "./ScrollContainer";
+import Projects from './Projects'
 
 const Portfolio = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1500 });
-  });
-
-  const [details, setDetails] = useState(false);
-  const [details1, setDetails1] = useState(false);
-  const [details2, setDetails2] = useState(false);
-  const [details3, setDetails3] = useState(false);
-  const [details4, setDetails4] = useState(false);
   
-  const showDetails = () => {
-    setDetails(!details)
-    setDetails3(false)
-    setDetails1(false)
-    setDetails2(false)
-    setDetails4(false)
-  }
-  const showDetails1 = () => {
-    setDetails1(!details1)
-    setDetails(false)
-    setDetails2(false)
-    setDetails3(false)
-    setDetails4(false)
-  }
-  const showDetails2 = () => {
-    setDetails2(!details2)
-    setDetails(false)
-    setDetails1(false)
-    setDetails3(false)
-    setDetails4(false)
-  }
-  const showDetails3 = () => {
-    setDetails3(!details3)
-    setDetails(false)
-    setDetails1(false)
-    setDetails2(false)
-    setDetails4(false)
-  }
-  const showDetails4 = () => {
-    setDetails4(!details4)
-    setDetails3(false)
-    setDetails(false)
-    setDetails1(false)
-    setDetails2(false)
+  const [showDetails, setShowDetails] = useState(false)
+
+  const details = (index) => {
+     if(showDetails === index){
+      return setShowDetails(null)
+     } 
+    setShowDetails(index) 
   }
 
   return (
-    <div className={style.container} >
-        <Heading className={style.heading} heading={"portfolio"} />
+    <div className={style.container}>
+    <Heading heading={"My Portfolio"} />
       <div className={style.list}>
-        <div data-aos="fade-up" className={style.item}>
-          <img src={myfirstportfolio.src} className='img' alt="project" />
-          <FaEye onClick={showDetails} className={style.eye} />
-          {details && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
-          >
-            <h1>My First Portfolio</h1>
-            <p>This is my first portfolio website. It contains details such as my skills, work portfolio, contact and contact form.</p>
-            <div className={style.features}>
-              <p>Built With HTML5, CSS3, JavaScript.</p>
-              <p>Mobile Responsive.</p>
-            </div>
-            <div className={style.links} >
-               <a href="https://chulocr8v.github.io" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/chulocr8v.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
-            </div>
-          </motion.div>} 
+        {Projects.map((project, index) => (
+        <div data-aos="fade-up" key={index} id="item" className={style.item}>
+        <Image src={project.img} height={370} width={600} alt="devchex projects" className={` ${showDetails === index && style.blur }`} />
+        <FaEye onClick={() => details(index)} className={style.eye} />
+        {showDetails === index && <motion.div className={style.details}
+        animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+          
+        }} 
+        >
+          <h1>{project.title}</h1>
+          <p>{project.description}</p>
+          <ul className={style.features}>
+            <p>{project.featureOne}</p>
+            <p>{project.featureTwo}</p>
+          </ul>
+          <div className={style.links}>
+            <a href={project.demo}><FaGlobe className={style.icon} /></a>
+            <a href={project.github}><FaGithub className={style.icon} /></a>
+          </div>
+        </motion.div>} 
         </div>
-        
-        <div data-aos="fade-up" className={style.item}>
-          <img src={grampro.src} className='img1' alt="project" />
-          <FaEye onClick={showDetails1} className={style.eye} />
-          {details1 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
-          >
-            <h1>Grampro</h1>
-            <p>This is a Photo Bucket that allows uploading of pictures and preview of uploaded pictures. The uploaded pictures are stored with Google Firebase which acts as the backend.</p>
-            <div className={style.features}>
-              <p>Built With HTML5, Sass, React.js, Firebase and Firestore.</p>
-              <p>Mobile Responsive.</p>
-            </div>
-             <div className={style.links} >
-              <a href="https://grampro.netlify.app" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/grampro" target="_blank" rel="noopener noreferrer" ><FaGithub className={style.icon} /> </a>
-            </div>
-          </motion.div>} 
-        </div>
-        
-        <div data-aos="fade-up" className={style.item}>
-          <FaEye onClick={showDetails2} className={style.eye} />
-          <img src={paulray.src} className='img2' alt="project" />
-          {details2 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
-          >
-            <h1>PaulRay Photography</h1>
-            <p>This is a photography portfolio website designed to showcase the profile of a photographer. It contains details about the photographer such as skills, services, past works and contact details.</p>
-            <div className={style.features}>
-              <p>Built With HTML5, CSS3, and Javascript.</p>
-              <p>Mobile Responsive.</p>
-            </div>
-             <div className={style.links} >
-              <a href="https://chulocr8v.github.io/paul-ray.github.io/" target="_blank" rel="noopener noreferrer" ><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/paul-ray.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
-            </div>
-          </motion.div>} 
-        </div>
-        
-        <div data-aos="fade-up" className={style.item}>
-          <FaEye onClick={showDetails4} className={style.eye} />
-          <img src={shop.src} className='img4' alt="project" />
-          {details4 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
-          >
-            <h1>Shop 24Seven</h1>
-            <p>This is template of an online store. It features only the landing page and no additional features.</p>
-            <div className={style.features}>
-              <p>Built With HTML5, CSS3, and Javascript.</p>
-              <p>Mobile Responsive.</p>
-            </div>
-             <div className={style.links} >
-              <a href="https://shop247.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/shop24seven.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
-            </div>
-          </motion.div>} 
-        </div>
-        
-        <div data-aos="fade-up" className={style.item}>
-          <img src={blogr.src} className='img3' alt="project" />
-          <FaEye onClick={showDetails3} className={style.eye} />
-          {details3 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
-          >
-            <h1>Blogr Landing Page</h1>
-            <p>This is a blogr website template design challenge which I got from front-end mentor.</p>
-            <div className={style.features}>
-              <p>Built With HTML5, CSS3, TailwindCss and JavaScript.</p>
-              <p>Mobile Responsive.</p>
-            </div>
-             <div className={style.links} >
-              <a href="https://chulocr8v.github.io/blogr-landing-page.github.io/" target="_blank" rel="noopener noreferrer"><FaGlobe className={style.icon} /> </a>
-               <a href="https://github.com/ChuloCr8v/blogr-landing-page.github.io" target="_blank" rel="noopener noreferrer"><FaGithub className={style.icon} /> </a>
-            </div>
-          </motion.div>} 
-        </div>
-         <style jsx>
-            {`
-            .img {filter: blur(${details ? '5px' : 'none'})}
-            .img1 {filter: blur(${details1 ? '5px' : 'none'})}
-            .img2 {filter: blur(${details2 ? '5px' : 'none'})}
-            .img3 {filter: blur(${details3 ? '5px' : 'none'})}
-            .img4 {filter: blur(${details4 ? '5px' : 'none'})}
-            `}
-          </style>
+        ))} 
       </div>
       <div className={style.scrollcontainer}>
-        <ScrollContainer />
         <CircleDecoration />
       </div>
     </div>
@@ -183,3 +68,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+

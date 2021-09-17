@@ -1,6 +1,10 @@
 .skillsection {
   min-height: 100vh;
   margin: 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 } 
 
 @media (min-width: 788px){
@@ -9,6 +13,7 @@
     margin-top: 50px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
   }

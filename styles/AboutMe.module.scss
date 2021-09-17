@@ -43,9 +43,21 @@
   }
   .list {
     margin-top: 100px;
+    padding: 20px;
     .item {
+      background: rgba(0,0,0,0.507);
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
+      border: 2px #ff2768 solid ;
       @include flex;
       margin-top: 20px;
+      transition: all 0.8s ease-in-out;
+      &:hover {
+        border: 5px #069ce5 solid ;
+        filter: hue-rotate(360deg);
+        transform: rotateY(360deg) scale(1.05);
+      }
       .icon {
         font-size: 35px;
         color: #069ce5;

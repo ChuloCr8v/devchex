@@ -1,9 +1,11 @@
 import style from './About.module.scss' 
 import Projects from '../components/Portfolio'
+import {motion, AnimatePresence} from 'framer-motion'
 
 const Portfolio = () => {
   return(
-    <div className={style.aboutme} >
+    <AnimatePresence >
+    <motion.div className={style.aboutme}>
       <h1 className={style.heading}> Live <span>Projects</span></h1>
        <div className="projects">
         <Projects  />
@@ -26,7 +28,8 @@ const Portfolio = () => {
          }
       `} 
       </style>
-    </div>
+    </motion.div>
+    </AnimatePresence>
     )
 }
 

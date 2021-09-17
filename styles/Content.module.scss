@@ -3,28 +3,44 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  margin: 10px auto;
+ .icon { 
+   position: absolute;
+   top: -12px;
+   left: -12px;
+   color: white;
+   font-size: 60px;
+   background: #232b34;
+   padding: 10px;
+   border: 2px silver solid;
+   border-radius: 100px;
+   box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5); 
+ }
 //  padding: 20px 35px;
     h5 {
     text-align: center;
     color: #069ce5;
-    margin: 70px 0;
+    margin-top: 70px;
     font-size: 18px;
     font-weight: 400;
   }
   .list {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap;
+  border: 2px gray solid;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
    .item {
      display: flex;
      justify-content: flex-start;
      align-items: center;
-    .icon {
-      color: #069ce5;
-      margin-right: 20px;
-      font-size: 20px;
-    }
+     margin-left: 10px;
+     margin-left: 10px;
    p {
      font-size: 15px;
      color: white;
