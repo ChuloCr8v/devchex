@@ -45,9 +45,12 @@
   position: relative;
   overflow: hidden;
   box-shadow: 3px 3px 8px 2px  rgb(0,0,0,0.4 );
+  img {
+    max-width: 100%;
+  }
 }
 
-.details {
+.description {
   display: flex;
   min-width: 100%;
   height: 100%;
@@ -157,7 +160,7 @@
     box-shadow: 3px 3px 8px 2px  rgb(0,0,0,0.4 );
   }
   
-  .details {
+  .description {
     display: flex;
     min-width: 100%;
     height: 100%;

@@ -24,7 +24,7 @@ const Ports = [
       featureThree: "Cool Design."
     }, 
     {
-      title: 'PaulRay Photography', 
+      title: 'Blogr', 
       img: '/../public/blogr.jpg', 
       description: "This is a blogr website template design challenge which I got from front-end mentor", 
       featureOne: "Built With HTML5, CSS3, TailwindCss and Javascript", 

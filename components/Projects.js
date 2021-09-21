@@ -28,7 +28,7 @@ const Projects = [
   }, 
   
    {
-      img: "/../public/shop.jpg", 
+      img: "/./images/shop.jpg", 
     title: "Shop 24Seven", 
     description: "This is template of an online store. It features only the landing page and no additional features.", 
     featureOne: "Built With HTML5, CSS3, and Javascript", 
