@@ -37,7 +37,6 @@ const Intro = () => {
       </motion.h1>
       <motion.h1
       className={style.role}
-      className={style.role}
       initial = {{ y: 20, opacity: 0}}
       animate = {{y: 0, opacity: 1}}
       transition = {{delay: 3.5, type: 'spring', stiffnes: 50}}
