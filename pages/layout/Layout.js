@@ -1,7 +1,7 @@
 import style from "./Layout.module.scss";
 import MenuTab from "./MenuTab";
 import MobileMenu from "./MobileMenu";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.jpg";
 import { useState, useEffect } from "react";
 import CircleDecoration from '../../components/CircleDecoration'
 

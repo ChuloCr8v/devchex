@@ -4,7 +4,7 @@ import { FaEye, FaGlobe, FaGithub } from "react-icons/fa";
 import myfirstportfolio from '../public/portfolio.jpg'
 import paulray from '../public/paulray.jpg'
 import grampro from '../public/grampro.jpg'
-import shop from './images/shop.jpg'
+import shop from '../public/shop.jpg'
 import blogr from '../public/blogr.jpg'
 import { useState } from "react";
 import { motion } from "framer-motion";
