@@ -6,14 +6,16 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 50px;
-    .p {
+    .content {
+    p {
       font-size: 13px;
       color: white;
       line-height: 18px;
-     // letter-spacing: 2px;
+      // letter-spacing: 2px;
       text-align: center;
       padding: 0 10px;
     }
+  }
     .forms {
       margin-top: 100px;
     }
@@ -31,6 +33,36 @@
       .forms {
         display: flex;
         padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contactsection {
+    overflow: hidden;
+    margin-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
+    .container {
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-top: 50px;
+      .content {
+        p {
+          font-size: 1.5rem;
+          letter-spacing: 4px;
+          line-height: 30px;
+          color: white;
+          line-height: 30px;
+          // letter-spacing: 2px;
+          text-align: center;
+          padding: 0 10px;
+        }
+      }
+      .forms {
+        margin-top: 100px;
       }
     }
   }

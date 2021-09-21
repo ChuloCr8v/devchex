@@ -19,14 +19,16 @@ const ContactSection = () => {
         <Heading heading={"Contact Me"} />
         <div className={style.container}>
           <CircleDecoration />
-          <p data-aos="fade-up" className={style.p}>
-            I am open to job offers in Front End Development, WordPress
-            Development and Content Creation for Websites and Blogs.
-          </p>
-          <p data-aos="fade-up" className={style.p}>
-            You can reach me on any of the following channels and I will get
-            back to you.
-          </p>
+          <div className={style.content}>
+            <p data-aos="fade-up" className={style.p}>
+              I am open to job offers in Front End Development, WordPress
+              Development and Content Creation for Websites and Blogs.
+            </p>
+            <p data-aos="fade-up" className={style.p}>
+              You can reach me on any of the following channels and I will get
+              back to you.
+            </p>
+          </div>
           <div className={style.forms}>
             <ContactCard />
             <ContactForm />

@@ -22,24 +22,28 @@ const Intro = () => {
       initial = {{ y: 20, opacity: 0}}
       animate = {{y: 0, opacity: 1}}
       transition = {{delay: 2.5, type: 'spring', stiffnes: 50}}
+      className={style.role1}
       > 
-      Front-End Developer 
+      Front-End Developer, 
       </motion.h1>
       <motion.h1
+      className={style.role}
       initial = {{ y: 20, opacity: 0}}
       animate = {{y: 0, opacity: 1}}
       transition = {{delay: 3, type: 'spring', stiffnes: 50}}
     
       > 
-      Wordpress Developer 
+      Wordpress Developer, 
       </motion.h1>
       <motion.h1
+      className={style.role}
+      className={style.role}
       initial = {{ y: 20, opacity: 0}}
       animate = {{y: 0, opacity: 1}}
       transition = {{delay: 3.5, type: 'spring', stiffnes: 50}}
     
       > 
-      Content Creator 
+      Content Creator. 
       </motion.h1>
     </div>
     )

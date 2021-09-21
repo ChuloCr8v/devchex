@@ -15,7 +15,7 @@
   overflow: hidden;
   position: relative;
  //-top: 200px;
-    min-height: 100vh;
+  // min-height: 100vh;
   @include flex;
   .description {
     color: white;
@@ -136,3 +136,45 @@
     }
   }
 }
+
+
+
+@media (min-width: 1200px) {
+ 
+  .aboutme {
+    .description {
+      p {
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        line-height: 30px;
+        letter-spacing: 5px;
+      }
+      span {
+        font-size: 1.8rem;
+      }
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: grid-start;
+      padding: 0 10rem;
+      .item {
+        .icon {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1.3rem;
+          letter-spacing: 4px;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+
+

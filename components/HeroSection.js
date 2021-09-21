@@ -16,6 +16,7 @@ const HeroSection = () => {
   
   return(
     <div className={style.herocontainer}>
+    <h1 className={style.bgtext} >Dev. <span>CHEX</span></h1>
     {contact && <div className={style.formcontainer}>
     <div className={style.forms}>
     <ContactForm />
@@ -28,13 +29,13 @@ const HeroSection = () => {
       animate = {{ x: 0, opacity: 1}}
       transition = {{delay: 0.5, type: 'spring', stiffness:50}}
       >
-        <div className={style.imagecontainer}>
-          <SocialIcons />
           <div className={style.spin}>
             <img src={Logo.src} alt="Chex" />
+            <SocialIcons />
           </div>
+        <div className={style.introcontainer}>
+          <Intro />
         </div>
-        <Intro />
         <div className={style.buttons}>
           <motion.button className={style.cvbtn}
           initial = {{ y: -20, opacity: 0}}

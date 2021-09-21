@@ -14,3 +14,15 @@
      margin: -40px;
    }
   }
+
+  @media (min-width: 1200px){
+    .heading {
+      
+       h1 {
+         position: relative;
+         text-align: center;
+         color: white;
+         font-size: 3rem;
+       }
+     }
+  }

@@ -1,82 +1,83 @@
 .frontend {
   overflow: hidden;
- h5 {
+  h5 {
     text-align: center;
     color: #069ce5;
     margin: 70px 0;
     font-size: 18px;
     font-weight: 400;
   }
- .stacks {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   margin-top: -30px;
-   padding: 20px;
-   position: relative;
-  .skillset1, .skillset2, .skillset3, .skillset4 {
-    
+  .stacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -30px;
+    padding: 20px;
+    position: relative;
+    .skillset1,
+    .skillset2,
+    .skillset3,
+    .skillset4 {
       border-radius: 10px;
-      background: rgba(0,0,0,0.4) ;
+      background: rgba(0, 0, 0, 0.4);
       margin: 20px;
       padding: 20px;
       display: flex;
       flex-direction: column;
       position: relative;
       transition: all 0.7s ease-in-out;
-      box-shadow: 3px 3px 2px rgb(0,0,0, 0.5);
-     .stackcon {
-       border: 0.5px silver solid;
-       padding: 20px;
-       border-radius: 10px;
-       box-shadow: 3px 3px 8px 2px rgba(0,0,0, 0.4);
-     transition: all 0.8s ease-in-out;
-      &:hover {
-        filter: hue-rotate(360deg);
-        transform: rotateY(360deg);
-       box-shadow: 3px 3px 8px 2px rgba(255,255,255, 0.4);
+      box-shadow: 3px 3px 2px rgb(0, 0, 0, 0.5);
+      .stackcon {
+        border: 0.5px silver solid;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.4);
+        transition: all 0.8s ease-in-out;
+        &:hover {
+          filter: hue-rotate(360deg);
+          transform: rotateY(360deg);
+          box-shadow: 3px 3px 8px 2px rgba(255, 255, 255, 0.4);
+        }
       }
-       
-     }
-    
-     .icon {
-       position: absolute;
-       top: -12px;
-       left: -12px;
-       color: white;
-       font-size: 60px;
-       background: #232b34;
-       padding: 10px;
-       border: 2px silver solid;
-       border-radius: 100px;
-       box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
-     }
+
+      .icon {
+        position: absolute;
+        top: -12px;
+        left: -12px;
+        color: white;
+        font-size: 60px;
+        background: #232b34;
+        padding: 10px;
+        border: 2px silver solid;
+        border-radius: 100px;
+        box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
+      }
       p {
         text-align: center;
         font-size: 13px;
         animation: color 1s ease-in-out infinite;
-        } 
       }
+    }
     .skillset2 {
-       p {
-         font-size: 13px;
-         animation: color2 2s linear infinite
-       } 
-     }
-     
+      p {
+        font-size: 13px;
+        animation: color2 2s linear infinite;
+      }
+    }
+
     .skillset3 {
-       p {
-         animation: color3 1.3s ease-in infinite
-       } 
-     }
-     
+      p {
+        animation: color3 1.3s ease-in infinite;
+      }
+    }
+
     .skillset4 {
-       p {
-         animation: color4 0.6s ease-out infinite
-       } 
-     }
-   } 
- } 
+      p {
+        animation: color4 0.6s ease-out infinite;
+      }
+    }
+  }
+}
 
 @keyframes color {
   0% {
@@ -131,25 +132,63 @@
 
 @media (min-width: 788px) {
   .frontend {
-  .stacks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    .skillset1, .skillset2, .skillset3, .skillset4 {
-          
-       .stackcon {
+    h5 {
+      text-align: center;
+      color: #069ce5;
+      margin: 70px 0;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+    .stacks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .skillset1,
+      .skillset2,
+      .skillset3,
+      .skillset4 {
+        
+        .stackcon {
           height: 150px;
-          display: flex ;
+          display: flex;
           justify-content: center;
-          align-items: center ;
-          flex-wrap: wrap ;
-            p {
-           text-align: left;
-           margin-right: 20px;
-           font-size: 15px ;
-         } 
-         }
-    
+          align-items: center;
+          flex-wrap: wrap;
+          p {
+            text-align: left;
+            margin-right: 20px;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
-  } 
+}
+
+@media (min-width: 1200px) {
+  .frontend {
+    .stacks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .skillset1,
+      .skillset2,
+      .skillset3,
+      .skillset4 {
+        .icon {
+          font-size: 5rem;
+        }
+        .stackcon {
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          p {
+            text-align: left;
+            margin-right: 20px;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
 }

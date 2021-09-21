@@ -5,20 +5,20 @@
   align-items: center;
   position: relative;
   margin: 10px auto;
- .icon { 
-   position: absolute;
-   top: -12px;
-   left: -12px;
-   color: white;
-   font-size: 60px;
-   background: #232b34;
-   padding: 10px;
-   border: 2px silver solid;
-   border-radius: 100px;
-   box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5); 
- }
-//  padding: 20px 35px;
-    h5 {
+  .icon {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    color: white;
+    font-size: 60px;
+    background: #232b34;
+    padding: 10px;
+    border: 2px silver solid;
+    border-radius: 100px;
+    box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
+  }
+  //  padding: 20px 35px;
+  h5 {
     text-align: center;
     color: #069ce5;
     margin-top: 70px;
@@ -26,32 +26,65 @@
     font-weight: 400;
   }
   .list {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  border: 2px gray solid;
-  margin: 20px;
-  border-radius: 10px;
-  padding: 20px 40px;
-  box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
-   .item {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-     margin-left: 10px;
-     margin-left: 10px;
-   p {
-     font-size: 15px;
-     color: white;
-     text-align: center;
-   }
-   }
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 2px gray solid;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
+    .item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10px;
+      margin-left: 10px;
+      p {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+      }
+    }
   }
 }
 
-@media (min-width:788px){
+@media (min-width: 788px) {
   .list {
     margin-top: -30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    .icon {
+      font-size: 5rem;
+    }
+    //  padding: 20px 35px;
+    h5 {
+      font-size: 3rem;
+    }
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      border: 2px gray solid;
+      margin: 20px;
+      border-radius: 10px;
+      padding: 20px 80px;
+      box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
+      .item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 20px;
+        p {
+          font-size: 1.3rem;
+          color: white;
+        }
+      }
+    }
   }
 }
