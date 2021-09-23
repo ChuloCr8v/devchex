@@ -13,15 +13,10 @@ const about = () => {
       </div>
       <style jsx>
         {`
-          @media (min-width: 788px) {
-            .about {
-              padding: 400px 0;
-            }
-
-            h1 {
-              padding-top: 80px;
-            }
-          }
+        
+         .about {
+           padding-top: 200px;
+         }
         `}
       </style>
     </div>

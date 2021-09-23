@@ -1,6 +1,6 @@
 .container {
   overflow: hidden;
- // min-height: 100vh;
+  padding-bottom: 200px;
 }
 
 .list {
@@ -81,7 +81,6 @@
       text-align: center;
       color: yellow;
       margin: 4px;
-      margin-left: -40px;
     }
   } 
   .icon {

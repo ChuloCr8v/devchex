@@ -28,16 +28,22 @@ $transition: all 0.3s ease-in-out;
        margin-bottom: 5px;
        color: #f72146;
        transition: $transition;
-       &:hover {
-         transform: translateY(-5px);
-       }
+      
      }
-     a {
+    .link {
+       @include flex;
+      flex-direction: column;
+       margin: 10px auto;
        cursor: pointer;
        font-size: 15px;
        transition: $transition;
        &:hover {
          color: #f72146;
+        .icon {
+          transform: translateY(-5px);
+          color: #069ce5;
+          transform: scale(1.1);
+        }
        }
      }
     }
@@ -57,7 +63,7 @@ $transition: all 0.3s ease-in-out;
         .icon {
           display: none;
         }
-        a {
+     .link {
           color: white;
           font-size: 20px;
           margin-left: 15px;

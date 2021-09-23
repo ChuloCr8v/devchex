@@ -11,19 +11,7 @@ const CircleDecoration = () => {
   
   return(
     <div data-aos="fade-in" className={style.circledecoration}>
-      <div className={style.circle1}> </div>
-      <div className={style.circle2}> </div>
-      <motion.div className={style.circle3}
-      animate = {{
-      backgroundColor: ['white', 'yellow', 'orange', 'pink', 'blue', 'red'] , 
-      filter: [
-        'hue-rotate(360deg)', 
-        'hue-rotate(180deg)', 
-        'hue-rotate(90deg)', 
-        'hue-rotate(0)'
-        ]
-      }} 
-      ></motion.div>
+      
     </div>
     )
 }

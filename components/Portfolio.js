@@ -68,9 +68,16 @@ const Portfolio = () => {
         <div data-aos="fade-up" className={style.item}>
           <img src={myfirstportfolio.src} className='img' alt="project" />
           <FaEye onClick={showDetails} className={style.eye} />
-          {details && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
+          {details && <motion.div className={style.description} animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+        }} 
+          
           >
             <h1>My First Portfolio</h1>
             <p>This is my first portfolio website. It contains details such as my skills, work portfolio, contact and contact form.</p>
@@ -89,8 +96,16 @@ const Portfolio = () => {
           <img src={grampro.src} className='img1' alt="project" />
           <FaEye onClick={showDetails1} className={style.eye} />
           {details1 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
+           animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+          
+        }} 
           >
             <h1>Grampro</h1>
             <p>This is a Photo Bucket that allows uploading of pictures and preview of uploaded pictures. The uploaded pictures are stored with Google Firebase which acts as the backend.</p>
@@ -109,8 +124,16 @@ const Portfolio = () => {
           <FaEye onClick={showDetails2} className={style.eye} />
           <img src={paulray.src} className='img2' alt="project" />
           {details2 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
+           animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+          
+        }} 
           >
             <h1>PaulRay Photography</h1>
             <p>This is a photography portfolio website designed to showcase the profile of a photographer. It contains details about the photographer such as skills, services, past works and contact details.</p>
@@ -129,8 +152,16 @@ const Portfolio = () => {
           <FaEye onClick={showDetails4} className={style.eye} />
           <img src={shop.src} className='img4' alt="project" />
           {details4 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
+           animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+          
+        }} 
           >
             <h1>Shop 24Seven</h1>
             <p>This is template of an online store. It features only the landing page and no additional features.</p>
@@ -149,8 +180,16 @@ const Portfolio = () => {
           <img src={blogr.src} className='img3' alt="project" />
           <FaEye onClick={showDetails3} className={style.eye} />
           {details3 && <motion.div className={style.description}
-          initial= {{opacity: 0}}
-          animate= {{opacity: 1}} 
+          animate ={{ 
+        y: [-20, 20, -10, 10, 0], 
+        filter: [
+        'hue-rotate(360deg) contrast(100%)', 
+        'hue-rotate(180deg) contrast(200%)', 
+        'hue-rotate(90deg) contrast(300%)', 
+        'hue-rotate(0) contrast(100%)'
+        ]
+          
+        }} 
           >
             <h1>Blogr Landing Page</h1>
             <p>This is a blogr website template design challenge which I got from front-end mentor.</p>

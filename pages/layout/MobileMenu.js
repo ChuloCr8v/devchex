@@ -11,28 +11,48 @@ const MobileMenu= () => {
     >
       <ul className={style.ul}>
         <li>
+          <Link href="/" >
+          <div className={style.link} >
           <FaHome className={style.icon} />
-          <Link href="/" > Home </Link>
+          Home 
+          </div>
+          </Link>
         </li>
         
         <li>
+          <Link href="/about"> 
+          <div className={style.link} >
           <FaUser className={style.icon} />
-          <Link href="/about"> About </Link>
+          About 
+          </div >
+          </Link>
         </li>
         
         <li>
+          <Link href="/skills"> 
+          <div className={style.link} >
           <FaTools className={style.icon} />
-          <Link href="/skills"> Skills </Link>
+          Skills 
+          </div>
+          </Link>
         </li>
         
         <li>
+          <Link href="/portfolio"> 
+          <div className={style.link} >
           <FaBriefcase className={style.icon} />
-          <Link href="/portfolio"> Portfolio </Link>
+          Portfolio 
+          </div>
+          </Link>
         </li>
         
         <li>
+          <Link href="/contact">
+          <div className={style.link} >
           <FaIdCard className={style.icon} />
-          <Link href="/contact"> Contact </Link>
+          Contact 
+          </div>
+          </Link>
         </li>
       </ul>   
       

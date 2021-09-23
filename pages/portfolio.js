@@ -13,7 +13,7 @@ const Portfolio = () => {
       <style jsx>
       {`
         .projects {
-           padding-top: 200px;
+           padding-top: 150px;
          }
          
          @media (min-width: 788px){

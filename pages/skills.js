@@ -10,15 +10,19 @@ const Skills = () => {
       </div>
       <style jsx>
       {`
-      
-      @media (min-width: 788px) {
         .skill {
-           padding-top: 500px;
+           padding-top: 200px;
          }
-         h1 {
-           padding-top: 100px
+        
+        @media (min-width:688px) {
+           margin-top: 200px;
+         .skill {
+           padding-top: 400px;
          }
-      } 
+        .h1 {
+          margin-top: 400px;
+        }
+        }
       `} 
       </style>
     </div>

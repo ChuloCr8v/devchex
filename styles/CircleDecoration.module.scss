@@ -1,11 +1,10 @@
 .circledecoration {
-  position: fixed;
   .circle1, 
   .circle2,
-  .circle3 {
+  .circle3, 
+  .circle4 {
     height: 50px;
     width: 50px;
-  //  background: #ff2768;
     border-radius: 100%;
     position: absolute;
     filter: blur(20px);
@@ -21,7 +20,40 @@
   right: 100px;
   animation: move 3.6s ease-in-out alternate infinite;
 }
+
+.circle3 {
+  margin: 150% 50%;
+  animation: blink 6s ease-in-out alternate infinite;
+  filter: blur(30px);
 }
+
+.circle4 {
+  margin: 50% 10%;
+  animation: blink 8s ease-in-out alternate infinite;
+  filter: blur(20px);
+}
+       
+}
+  @keyframes blink {
+       0% {
+         background-color: red;
+       }
+       20% {
+         background-color: green;
+       }
+       40% {
+         background-color: blue;
+       }
+       60% {
+         background-color: pink;
+       }
+       80% {
+         background-color: white;
+       }
+       100% {
+         background-color: yellow;
+       }
+     }
 
 @keyframes color {
   0% {

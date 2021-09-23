@@ -11,6 +11,7 @@ const contact = () => {
       <style jsx>
       {`
         .contact {
+          padding-top: 200px;
          }
          
          @media (min-width: 788px){
