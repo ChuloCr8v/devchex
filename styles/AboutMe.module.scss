@@ -24,8 +24,8 @@
     p {
       line-height: 20px;
       //zletter-spacing: 2px;
-      text-align: justify;
-      font-size: 0.8em;
+      text-align: center;
+      font-size: 13px;
       margin-top: 50px;
     }
     .one {
@@ -65,7 +65,7 @@
       }
       h3 {
         color: #ff2768;
-        font-size: 1em;
+        font-size: 20px;
         text-align: center;
       //  margin: 20px;
       }
@@ -73,9 +73,9 @@
         color: white;
         text-align: center;
         margin-top: -10px;
-        font-size: 0.8em;
+        font-size: 13px;
         line-height: 20px;
-        padding: 0 20px;
+        padding: 20px;
         //letter-spacing: 2px;
       }
     }
@@ -118,7 +118,7 @@
         line-height: 20px;
       }
       span {
-  //      font-size: 15px
+        font-size: 15px
       }
     }
 
@@ -127,11 +127,11 @@
       grid-template-columns: 1fr 1fr;
       justify-content: grid-start;
       .item {
-       h3 {
-         // font-size: 18px;
+        h3 {
+          font-size: 18px;
         }
-       p {
-       //   font-size: 13px;
+        p {
+          font-size: 13px;
         }
       }
     }
@@ -146,7 +146,7 @@
     .description {
       p {
         padding: 10px 20px;
-    //   font-size: 13px;
+       font-size: 13px;
         line-height: 20px;
         letter-spacing: 5px;
       }
@@ -165,10 +165,10 @@
           font-size: 3rem;
         }
         h3 {
-     //     font-size: 16px;
+          font-size: 16px;
         }
         p {
-     //     font-size: 13px;
+          font-size: 13px;
           letter-spacing: 4px;
           line-height: 20px;
         }
